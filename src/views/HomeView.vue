@@ -3,7 +3,8 @@
 
 <template>
   <main class="relative">
-    <div
+    <section
+        id="section-home"
         class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-cyan-800 to-orange-950">
       <img src="@/assets/images/1stclassdelivery-bg.jpg" alt="Background Image"
            class="absolute w-full h-full object-cover filter blur-sm brightness-50">
@@ -19,8 +20,9 @@
         <p class="mt-4 drop-shadow-md">Comprehensive network of routes covers major cities and towns across North
           America, allowing to reach even the most remote locations with ease.</p>
       </div>
-    </div>
-    <div
+    </section>
+    <section
+        id="section-fleet"
         class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-800 to-gray-900">
       <img src="@/assets/images/1stclassdelivery-fleet-bg.jpg" alt="Background Image"
            class="absolute w-full h-full object-cover filter blur-sm brightness-50">
@@ -32,13 +34,14 @@
           technology to ensure safe and reliable transportation.</p>
         <p class="mt-4 drop-shadow-md">We've got the capacity to handle your most complex delivery needs.</p>
       </div>
-    </div>
-    <div
+    </section>
+    <section
+        id="section-career"
         class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-800 to-green-900">
       <img src="@/assets/images/1stclassdelivery-careers-bg.jpg" alt="Background Image"
            class="absolute w-full h-full object-cover filter blur-sm brightness-50">
       <div class="absolute text-white max-w-screen-md">
-        <h2 class="text-6xl font-bold">Careers</h2>
+        <h2 class="text-6xl font-bold">Career</h2>
         <p class="mt-4 drop-shadow-md">At First Class Delivery, we're committed to building a team of dedicated
           professionals who share our passion for delivering exceptional customer service.</p>
         <p class="mt-4 drop-shadow-md">If you're looking for a
@@ -47,8 +50,9 @@
         <p class="mt-4 drop-shadow-md">We're proud to offer a range of career paths for professional drivers, from
           experienced veterans to new entrants in the industry.</p>
       </div>
-    </div>
-    <div
+    </section>
+    <section
+        id="section-contacts"
         class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-lime-800 to-gray-800">
       <img src="@/assets/images/1stclassdelivery-contacts-bg.jpg" alt="Background Image"
            class="absolute w-full h-full object-cover filter blur-sm brightness-50">
@@ -63,6 +67,6 @@
             class="underline font-bold">tao.partizan@gmail.com</span></a>
         </p>
       </div>
-    </div>
+    </section>
   </main>
 </template>
