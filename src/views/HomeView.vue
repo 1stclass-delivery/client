@@ -9,14 +9,14 @@
            class="absolute w-full h-full object-cover filter blur-sm brightness-50">
       <div class="absolute text-white max-w-screen-md">
         <h2 class="text-6xl font-bold drop-shadow-md">First Class Delivery</h2>
-        <p class="mt-2 drop-shadow-md">First Class Delivery dedicated to providing exceptional transportation services
+        <p class="mt-4 drop-shadow-md">First Class Delivery dedicated to providing exceptional transportation services
           across the United States and Canada.</p>
-        <p class="mt-2 drop-shadow-md">Our trucks are equipped to handle a wide range of delivery needs, from small
+        <p class="mt-4 drop-shadow-md">Our trucks are equipped to handle a wide range of delivery needs, from small
           packages to large quantities of goods.</p>
-        <p class="mt-2 drop-shadow-md">With a strong focus on customer satisfaction, First Class Delivery team of
+        <p class="mt-4 drop-shadow-md">With a strong focus on customer satisfaction, First Class Delivery team of
           experienced drivers and logistics professionals work tirelessly to ensure timely and efficient delivery of
           your goods.</p>
-        <p class="mt-2 drop-shadow-md">Comprehensive network of routes covers major cities and towns across North
+        <p class="mt-4 drop-shadow-md">Comprehensive network of routes covers major cities and towns across North
           America, allowing to reach even the most remote locations with ease.</p>
       </div>
     </div>
@@ -26,11 +26,11 @@
            class="absolute w-full h-full object-cover filter blur-sm brightness-50">
       <div class="absolute text-white max-w-screen-md">
         <h2 class="text-6xl font-bold drop-shadow-md">Fleet</h2>
-        <p class="mt-2 drop-shadow-md">Our fleet consists straight trucks, box trucks, vans and semis with diverse
+        <p class="mt-4 drop-shadow-md">Our fleet consists straight trucks, box trucks, vans and semis with diverse
           brands like Freightliner, International, Volvo, Mercedes.</p>
-        <p class="mt-2 drop-shadow-md">All trucks are well-maintained, regularly serviced, and equipped with the latest
+        <p class="mt-4 drop-shadow-md">All trucks are well-maintained, regularly serviced, and equipped with the latest
           technology to ensure safe and reliable transportation.</p>
-        <p class="mt-2 drop-shadow-md">We've got the capacity to handle your most complex delivery needs.</p>
+        <p class="mt-4 drop-shadow-md">We've got the capacity to handle your most complex delivery needs.</p>
       </div>
     </div>
     <div
