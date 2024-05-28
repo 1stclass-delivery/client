@@ -1,18 +1,32 @@
-# client
+# First Class Delivery
 
-This template should help get you started developing with Vue 3 in Vite.
+First Class Delivery dedicated to providing exceptional transportation services across the United States and Canada.
 
-## Recommended IDE Setup
+## Tech Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### Programming Languages
 
-## Type Support for `.vue` Imports in TS
+| HTML                                                                           | CSS                                                                         | JS + TS                                                                                                                                                          |
+|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [![HTML](/src/assets/images/readme/html.png)](https://www.w3schools.com/html/) | [![CSS](/src/assets/images/readme/css.png)](https://www.w3schools.com/css/) | [![JS](/src/assets/images/readme/js.png)](https://www.w3schools.com/js/)[![JS](/src/assets/images/readme/typescript.png)](https://www.w3schools.com/typescript/) |
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+### Frameworks
 
-## Customize configuration
+| VueJS                                                          | Tailwind                                                                  |
+|----------------------------------------------------------------|---------------------------------------------------------------------------|
+| [![JS](/src/assets/images/readme/vue.png)](https://vuejs.org/) | [![JS](/src/assets/images/readme/tailwind.png)](https://tailwindcss.com/) |
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Building Tool
+
+| Vite                                                             |
+|------------------------------------------------------------------|
+| [![JS](/src/assets/images/readme/vite.png)](https://vitejs.dev/) |
+
+### Deployment
+
+| CI/CD - GitHub Actions                                                                         | Host - GitHup Pages                                                          |
+|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| [![GitHub](/src/assets/images/readme/github-actions.png)](https://github.com/features/actions) | [![GitHub](/src/assets/images/readme/github.png)](https://pages.github.com/) |
 
 ## Project Setup
 
