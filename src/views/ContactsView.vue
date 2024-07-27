@@ -9,7 +9,7 @@ import StickySection from "@/components/StickySection.vue";
       <h2 class="italic text-4xl md:text-6xl font-bold">Contacts</h2>
     </template>
     <template #body>
-      <div class="mt-8 max-w-screen-lg">
+      <div class="mt-8 max-w-screen-lg backdrop-blur-sm p-4 bg-gray-500/15 rounded-2xl mb-4">
         <p>Contact us today to learn more about our services and how we can tailor our
           transportation solutions to meet your unique needs.</p>
         <p>Trust First Class Delivery for all your transportation
