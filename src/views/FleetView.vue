@@ -16,26 +16,6 @@ import StickySection from "@/components/StickySection.vue";
         <p>All trucks are well-maintained, regularly serviced, and equipped with the latest
           technology to ensure safe and reliable transportation.</p>
         <p>We've got the capacity to handle your most complex delivery needs.</p>
-        <p>Our fleet consists straight trucks, box trucks, vans and semis with diverse
-          brands like Freightliner, International, Volvo, Mercedes.</p>
-        <p>All trucks are well-maintained, regularly serviced, and equipped with the latest
-          technology to ensure safe and reliable transportation.</p>
-        <p>We've got the capacity to handle your most complex delivery needs.</p>
-        <p>Our fleet consists straight trucks, box trucks, vans and semis with diverse
-          brands like Freightliner, International, Volvo, Mercedes.</p>
-        <p>All trucks are well-maintained, regularly serviced, and equipped with the latest
-          technology to ensure safe and reliable transportation.</p>
-        <p>We've got the capacity to handle your most complex delivery needs.</p>
-        <p>Our fleet consists straight trucks, box trucks, vans and semis with diverse
-          brands like Freightliner, International, Volvo, Mercedes.</p>
-        <p>All trucks are well-maintained, regularly serviced, and equipped with the latest
-          technology to ensure safe and reliable transportation.</p>
-        <p>We've got the capacity to handle your most complex delivery needs.</p>
-        <p>Our fleet consists straight trucks, box trucks, vans and semis with diverse
-          brands like Freightliner, International, Volvo, Mercedes.</p>
-        <p>All trucks are well-maintained, regularly serviced, and equipped with the latest
-          technology to ensure safe and reliable transportation.</p>
-        <p>We've got the capacity to handle your most complex delivery needs.</p>
       </div>
     </template>
   </sticky-section>
