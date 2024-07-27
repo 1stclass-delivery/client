@@ -9,7 +9,7 @@ import StickySection from "@/components/StickySection.vue";
       <h2 class="italic text-4xl md:text-6xl font-bold">Career</h2>
     </template>
     <template #body>
-      <div class="mt-8 max-w-screen-lg">
+      <div class="mt-8 max-w-screen-lg backdrop-blur-sm p-4 bg-gray-500/15 rounded-2xl mb-4">
         <p>At First Class Delivery, we're committed to building a team of dedicated
           professionals who share our passion for delivering exceptional customer service.</p>
         <p>If you're looking for a
