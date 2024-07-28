@@ -1,14 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
-  <footer class="fixed bottom-0 left-0 w-full text-white font-medium z-10 p-1 backdrop-blur-sm bg-gray-700/25">
-    <div class="flex grid-cols-2">
-      <img src="@/assets/images/fcd-logo.png" alt="logo" class="max-w-64 md:hidden">
-      <div class="w-full flex justify-end">
-      </div>
-    </div>
-    <ul class="grid grid-cols-1 md:flex md:justify-evenly gap-y-4 mt-4 md:mt-0">
-      <li>©2024 First Class Delivery LLC</li>
+  <footer class="fixed bottom-0 left-0 w-full text-white font-medium z-10 p-1 backdrop-blur-sm bg-gray-800/45">
+    <ul class="flex justify-evenly gap-y-4 mt-0 mx-4">
+      <li class="hidden md:block">©2024 First Class Delivery LLC</li>
+      <li class="hidden md:block">|</li>
+      <li><router-link class="text-blue-300 underline" :to="{name: 'privacy'}">Privacy Policy</router-link></li>
+      <li>|</li>
+      <li><router-link class="text-blue-300 underline" :to="{name: 'ccpa'}">California Residents</router-link></li>
     </ul>
   </footer>
 </template>
