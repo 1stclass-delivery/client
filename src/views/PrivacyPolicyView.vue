@@ -257,7 +257,7 @@
       <p>In particular, we have collected the following categories of personal information from its consumers within the
         last twelve (12) months: </p>
 
-      <table class="table table-bordered table-striped">
+      <table class="table table-bordered table-striped max-w-screen-sm md:max-w-screen-md">
         <thead class="thead-light">
         <tr>
           <th class="align-top">
