@@ -9,7 +9,7 @@ import StickySection from "@/components/StickySection.vue";
       <img src="@/assets/images/fcd-logo.png" alt="logo" class="w-2/3 max-w-screen-sm hidden md:block">
     </template>
     <template #body>
-      <div class="mt-18 text-black max-w-screen-lg backdrop-blur-sm p-4 bg-white/25 rounded-2xl mb-4">
+      <div class="mt-16 text-black max-w-screen-lg backdrop-blur-sm p-4 bg-white/25 rounded-2xl mb-4">
         <p>First Class Delivery dedicated to providing exceptional transportation services
           across the United States and Canada.</p>
         <p>Our trucks are equipped to handle a wide range of delivery needs, from small
