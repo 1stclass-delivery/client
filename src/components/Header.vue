@@ -4,7 +4,6 @@ import {ref} from "vue";
 const menuExpanded = ref<boolean>(false);
 
 const scrollTo = (sectionId: string) => {
-  console.log(document.getElementById(sectionId)!.offsetTop);
   window.scrollTo({top: document.getElementById(sectionId)!.offsetTop});
   menuExpanded.value = false;
 }
@@ -28,10 +27,10 @@ const scrollTo = (sectionId: string) => {
     </div>
     <ul class="grid grid-cols-1 md:flex md:justify-evenly gap-y-4 mt-4 md:mt-0"
         :class="[!menuExpanded ? 'hidden' : 'flex']">
-      <li class="flex justify-end hover:font-bold"><a href="#" @click.prevent="scrollTo('section-home')">Home</a></li>
-      <li class="flex justify-end hover:font-bold"><a href="#" @click.prevent="scrollTo('section-fleet')">Fleet</a></li>
-      <li class="flex justify-end hover:font-bold"><a href="#" @click.prevent="scrollTo('section-career')">Career</a></li>
-      <li class="flex justify-end hover:font-bold"><a href="#" @click.prevent="scrollTo('section-contacts')">Contacts</a></li>
+      <li class="flex justify-end hover:font-bold"><router-link :to="{name:'home'}" @click.prevent="scrollTo('section-home')">Home</router-link></li>
+      <li class="flex justify-end hover:font-bold"><router-link :to="{name:'fleet'}" @click.prevent="scrollTo('section-fleet')">Fleet</router-link></li>
+      <li class="flex justify-end hover:font-bold"><router-link :to="{name:'career'}" @click.prevent="scrollTo('section-career')">Career</router-link></li>
+      <li class="flex justify-end hover:font-bold"><router-link :to="{name:'contacts'}" @click.prevent="scrollTo('section-contacts')">Contacts</router-link></li>
     </ul>
   </header>
 </template>
