@@ -10,7 +10,7 @@ const scrollTo = (sectionId: string) => {
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 w-full text-gray-900 font-medium z-50 p-4 backdrop-blur-sm"
+  <header class="fixed top-0 left-0 w-screen text-gray-900 font-medium z-50 p-4 backdrop-blur-sm"
           :class="[menuExpanded ? 'bg-opacity-80 bg-white md:bg-white md:bg-opacity-50' : 'bg-white bg-opacity-50']">
     <div class="flex grid-cols-2">
       <img src="@/assets/images/fcd-logo.png" alt="logo" class="max-w-64 md:hidden">
