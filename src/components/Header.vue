@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import {ref} from "vue";
+import router from "@/router";
 
 const menuExpanded = ref<boolean>(false);
 
-const scrollTo = (sectionId: string) => {
-  window.scrollTo({top: document.getElementById(sectionId)!.offsetTop});
+const goTo = async (anchor: string) => {
+  await router.push({name: "home"});
+  window.scrollTo({top: document.getElementById("section-" + anchor)!.offsetTop});
   menuExpanded.value = false;
 }
 </script>
@@ -17,20 +19,22 @@ const scrollTo = (sectionId: string) => {
       <div class="w-full flex justify-end">
         <button class="md:hidden" @click="menuExpanded = !menuExpanded">
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path v-show="!menuExpanded" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15" />
-            <path class="text-red-500" v-show="menuExpanded" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M 1 1 15 15 M 15 1 1 15" />
+            <path v-show="!menuExpanded" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"/>
+            <path class="text-red-500" v-show="menuExpanded" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="2"
+                  d="M 1 1 15 15 M 15 1 1 15"/>
           </svg>
         </button>
       </div>
     </div>
     <ul class="grid grid-cols-1 md:flex md:justify-evenly gap-y-4 mt-4 md:mt-0"
         :class="[!menuExpanded ? 'hidden' : 'flex']">
-      <li class="flex justify-end hover:font-bold"><router-link :to="{name:'home'}" @click.prevent="scrollTo('section-home')">Home</router-link></li>
-      <li class="flex justify-end hover:font-bold"><router-link :to="{name:'home'}" @click.prevent="scrollTo('section-fleet')">Fleet</router-link></li>
-      <li class="flex justify-end hover:font-bold"><router-link :to="{name:'home'}" @click.prevent="scrollTo('section-career')">Career</router-link></li>
-      <li class="flex justify-end hover:font-bold"><router-link :to="{name:'home'}" @click.prevent="scrollTo('section-contacts')">Contacts</router-link></li>
+      <li class="flex justify-end hover:font-bold"><a @click.prevent="goTo('home')">Home</a></li>
+      <li class="flex justify-end hover:font-bold"><a @click.prevent="goTo('fleet')">Fleet</a></li>
+      <li class="flex justify-end hover:font-bold"><a @click.prevent="goTo('career')">Career</a></li>
+      <li class="flex justify-end hover:font-bold"><a @click.prevent="goTo('contacts')">Contacts</a></li>
     </ul>
   </header>
 </template>
