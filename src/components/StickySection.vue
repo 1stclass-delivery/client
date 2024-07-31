@@ -1,12 +1,14 @@
 <script setup lang="ts">
-defineProps<{ id: string, bgImage: string }>();
+const props = defineProps<{ id: string, bgImage: string }>();
+const bgImg = "bg-[url('" + props.bgImage + "')]";
 </script>
 
 <template>
-  <section :id="id">
-    <img :src="bgImage" alt="Background Image" class="sticky top-0 object-center object-cover sepia-[.15] h-screen w-screen">
-    <div class="relative z-10 md:mt-12 mt-28 -top-[calc(100vh)] -mb-[calc(100vh)] text-white text-sm md:text-base md:px-24 px-8 min-h-screen">
-      <slot name="header" class="mt-8"></slot>
+  <section :id="id"
+           :class="bgImg"
+           class="sticky top-0 text-white text-sm md:text-base h-screen snap-start overflow-scroll bg-cover bg-center">
+    <div class="mt-28 md:mt-16 w-11/12 md:w-3/4 m-auto">
+      <slot name="header"></slot>
       <slot name="body"></slot>
     </div>
   </section>
