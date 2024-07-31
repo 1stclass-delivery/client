@@ -828,7 +828,7 @@
 
       <p>Last Updated: July 28, 2024</p>
     </div>
-    <div class="h-32"></div>
+    <div class="h-96"></div>
   </div>
 </template>
 
