@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:w-3/4 mt-24 mb-8 mx-auto p-4">
+  <div class="w-full md:w-3/4 mt-24 mb-16 mx-auto p-4 h-screen overflow-y-auto">
 
     <h1 class="text-4xl md:text-6xl">Privacy Policy</h1>
 
@@ -828,7 +828,7 @@
 
       <p>Last Updated: July 28, 2024</p>
     </div>
-
+    <div class="h-32"></div>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
 import MainView from "@/views/MainView.vue";
-import PrivacyPolicyView from "@/views/PrivacyPolicyView.vue";
-import CaliforniaResidentsView from "@/views/CaliforniaResidentsView.vue";
+import PrivacyPolicyView from "@/views/privacy/PrivacyPolicyView.vue";
+import CaliforniaResidentsView from "@/views/privacy/CaliforniaResidentsView.vue";
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),

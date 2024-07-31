@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="mt-32 w-full md:w-3/4 mx-auto px-4">
+  <div class="mt-32 w-full md:w-3/4 mx-auto px-4 overflow-y-auto">
     <p>
       At First Class Delivery LLC and our affiliated companies, we are committed to
       transparency about how we use your data. If you are a California resident, you can request a copy of your personal&nbsp;information,
