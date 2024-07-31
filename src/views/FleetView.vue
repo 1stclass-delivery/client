@@ -5,7 +5,7 @@ import StickySection from "@/components/StickySection.vue";
 </script>
 
 <template>
-  <sticky-section id="section-fleet" :bg-image="bgFleet">
+  <sticky-section id="fleet" :bg-image="bgFleet">
     <template #header>
       <h2 class="italic text-4xl md:text-6xl font-bold">Fleet</h2>
     </template>

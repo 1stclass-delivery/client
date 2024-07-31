@@ -4,7 +4,7 @@ import StickySection from "@/components/StickySection.vue";
 </script>
 
 <template>
-  <sticky-section id="section-career" :bg-image="bgCareer">
+  <sticky-section id="career" :bg-image="bgCareer">
     <template #header>
       <h2 class="italic text-4xl md:text-6xl font-bold">Career</h2>
     </template>

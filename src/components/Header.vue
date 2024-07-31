@@ -1,15 +1,26 @@
 <script setup lang="ts">
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 import router from "@/router";
 
 const menuExpanded = ref<boolean>(false);
 
+const offsetTopMap = {} as { [key: string]: number };
+
 const goTo = async (anchor: string) => {
   await router.push({name: "home"});
   const main = document.querySelector('main')!;
-  main.scrollTo({top: document.getElementById("section-" + anchor)!.offsetTop});
+  main.scrollTo({top: offsetTopMap[anchor]});
   menuExpanded.value = false;
 }
+
+onMounted(() => {
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelector("main")?.getElementsByClassName("sticky");
+    Array.prototype.forEach.call(sections, function (el) {
+      offsetTopMap[el.id] = el.offsetTop;
+    });
+  });
+});
 </script>
 
 <template>
@@ -41,7 +52,7 @@ const goTo = async (anchor: string) => {
 </template>
 
 <style scoped>
-  ul li{
-    @apply flex justify-end hover:font-bold hover:cursor-pointer;
-  }
+ul li {
+  @apply flex justify-end hover:font-bold hover:cursor-pointer;
+}
 </style>
