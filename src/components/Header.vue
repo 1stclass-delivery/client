@@ -7,6 +7,7 @@ const menuExpanded = ref<boolean>(false);
 const offsetTopMap = {} as { [key: string]: number };
 
 const goTo = async (anchor: string) => {
+  console.log(offsetTopMap);
   await router.push({name: "home"});
   const main = document.querySelector('main')!;
   main.scrollTo({top: offsetTopMap[anchor]});
