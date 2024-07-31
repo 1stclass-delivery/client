@@ -4,13 +4,13 @@ import router from "@/router";
 
 const menuExpanded = ref<boolean>(false);
 
-const offsetTopMap = {} as { [key: string]: number };
+const offsetTopMap = ref({} as { [key: string]: number });
 
 const goTo = async (anchor: string) => {
   console.log(offsetTopMap);
   await router.push({name: "home"});
   const main = document.querySelector('main')!;
-  main.scrollTo({top: offsetTopMap[anchor]});
+  main.scrollTo({top: offsetTopMap.value[anchor]});
   menuExpanded.value = false;
 }
 
@@ -18,7 +18,7 @@ onMounted(() => {
   document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelector("main")?.getElementsByClassName("sticky");
     Array.prototype.forEach.call(sections, function (el) {
-      offsetTopMap[el.id] = el.offsetTop;
+      offsetTopMap.value[el.id] = el.offsetTop;
     });
   });
 });
@@ -48,6 +48,7 @@ onMounted(() => {
       <li><a @click.prevent="goTo('fleet')">Fleet</a></li>
       <li><a @click.prevent="goTo('career')">Career</a></li>
       <li><a @click.prevent="goTo('contacts')">Contacts</a></li>
+      <li>{{offsetTopMap}}</li>
     </ul>
   </header>
 </template>
