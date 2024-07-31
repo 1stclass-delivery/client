@@ -7,7 +7,6 @@ const menuExpanded = ref<boolean>(false);
 const offsetTopMap = ref({} as { [key: string]: number });
 
 const goTo = async (anchor: string) => {
-  console.log(offsetTopMap);
   await router.push({name: "home"});
   const main = document.querySelector('main')!;
   main.scrollTo({top: offsetTopMap.value[anchor]});
@@ -15,12 +14,13 @@ const goTo = async (anchor: string) => {
 }
 
 onMounted(() => {
-  document.addEventListener("DOMContentLoaded", () => {
+  // refactor this f#$#@$hit
+  setTimeout(() => {
     const sections = document.querySelector("main")?.getElementsByClassName("sticky");
     Array.prototype.forEach.call(sections, function (el) {
       offsetTopMap.value[el.id] = el.offsetTop;
     });
-  });
+  }, 1);
 });
 </script>
 
@@ -48,7 +48,6 @@ onMounted(() => {
       <li><a @click.prevent="goTo('fleet')">Fleet</a></li>
       <li><a @click.prevent="goTo('career')">Career</a></li>
       <li><a @click.prevent="goTo('contacts')">Contacts</a></li>
-      <li>{{offsetTopMap}}</li>
     </ul>
   </header>
 </template>
