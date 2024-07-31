@@ -7,7 +7,7 @@ import ContactsView from "@/views/ContactsView.vue";
 </script>
 
 <template>
-  <main class="overflow-scroll h-screen snap-y snap-mandatory scroll-smooth" ref="main">
+  <main class="overflow-y-auto h-screen snap-y snap-mandatory scroll-smooth" ref="main">
     <home-view/>
     <fleet-view/>
     <career-view/>
