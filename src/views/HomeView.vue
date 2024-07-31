@@ -4,7 +4,7 @@ import StickySection from "@/components/StickySection.vue";
 </script>
 
 <template>
-  <sticky-section id="section-home" :bg-image="bgHome">
+  <sticky-section id="home" :bg-image="bgHome">
     <template #header>
       <img src="@/assets/images/fcd-logo.png" alt="logo" class="w-2/3 max-w-screen-sm hidden md:block">
     </template>

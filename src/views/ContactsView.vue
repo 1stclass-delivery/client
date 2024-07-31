@@ -4,7 +4,7 @@ import StickySection from "@/components/StickySection.vue";
 </script>
 
 <template>
-  <sticky-section id="section-contacts" :bg-image="bgContacts">
+  <sticky-section id="contacts" :bg-image="bgContacts">
     <template #header>
       <h2 class="italic text-4xl md:text-6xl font-bold">Contacts</h2>
     </template>
