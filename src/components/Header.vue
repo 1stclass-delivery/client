@@ -6,7 +6,8 @@ const menuExpanded = ref<boolean>(false);
 
 const goTo = async (anchor: string) => {
   await router.push({name: "home"});
-  window.scrollTo({top: document.getElementById("section-" + anchor)!.offsetTop});
+  const main = document.querySelector('main')!;
+  main.scrollTo({top: document.getElementById("section-" + anchor)!.offsetTop});
   menuExpanded.value = false;
 }
 </script>
@@ -31,14 +32,16 @@ const goTo = async (anchor: string) => {
     </div>
     <ul class="grid grid-cols-1 md:flex md:justify-evenly gap-y-4 mt-4 md:mt-0"
         :class="[!menuExpanded ? 'hidden' : 'flex']">
-      <li class="flex justify-end hover:font-bold"><a @click.prevent="goTo('home')">Home</a></li>
-      <li class="flex justify-end hover:font-bold"><a @click.prevent="goTo('fleet')">Fleet</a></li>
-      <li class="flex justify-end hover:font-bold"><a @click.prevent="goTo('career')">Career</a></li>
-      <li class="flex justify-end hover:font-bold"><a @click.prevent="goTo('contacts')">Contacts</a></li>
+      <li><a @click.prevent="goTo('home')">Home</a></li>
+      <li><a @click.prevent="goTo('fleet')">Fleet</a></li>
+      <li><a @click.prevent="goTo('career')">Career</a></li>
+      <li><a @click.prevent="goTo('contacts')">Contacts</a></li>
     </ul>
   </header>
 </template>
 
 <style scoped>
-
+  ul li{
+    @apply flex justify-end hover:font-bold hover:cursor-pointer;
+  }
 </style>

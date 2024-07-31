@@ -17,11 +17,11 @@ import StickySection from "@/components/StickySection.vue";
         <p>If you want to work with us and receive text messages, please contact us via e-mail or call by phone
           number.</p>
         <p class="mt-12"><a href="tel:+14407091601">Call us: <span
-            class="underline font-bold">+1 (440) 709-1601</span></a></p>
-        <p><a href="mailto:firstclassdeliveryllc2023@gmail.com">Text us: <span
-            class="underline font-bold">firstclassdeliveryllc2023@gmail.com</span></a>
+            class="underline font-bold text-lg">+1 (440) 709-1601</span></a></p>
+        <p class="mt-4"><a href="mailto:firstclassdeliveryllc2023@gmail.com">Text us: <span
+            class="underline font-bold text-lg">firstclassdeliveryllc2023@gmail.com</span></a>
         </p>
-        <p class="mt-12">To stop receive text messages from our company, please text "Stop" to <span class="underline">+1 (440) 709-1601</span> phone
+        <p class="mt-12 text-xs">To stop receive text messages from our company, please text "Stop" to <span class="underline">+1 (440) 709-1601</span> phone
           number.</p>
       </div>
     </template>
