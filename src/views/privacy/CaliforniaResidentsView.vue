@@ -1,4 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import router from "@/router";
+import {onMounted} from "vue";
+
+onMounted(() => {
+  if (router.currentRoute.value.name == "ccpa") {
+    document.querySelector('body')?.classList.remove('overflow-hidden');
+  }
+});
+</script>
 
 <template>
   <div class="mt-32 w-full md:w-3/4 mx-auto px-4 overflow-y-auto">
